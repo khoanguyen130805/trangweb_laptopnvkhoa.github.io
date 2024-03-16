@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyễn Văn Khoa">
+    <title>Web bán máy tính</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #logomaytinh img {
+            width: 5%;
+            height: auto;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        header {
+            background-color: palevioletred;
+            color: #fff;
+            padding: 20px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav li{
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+        nav li:hover{
+            background-color: brown;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+            margin: 30px 15px 10px 0px;
+        }
+        main{
+            padding: 50px;
+        }
+        .section{
+            margin-bottom: 50px;
+        }
+        .section p{
+            text-align: center;
+        }
+        .section h2{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 50px;
+            color: blueviolet;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product{
+            width: calc(33.3% - 20px);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .product img{
+            width: 50%;
+            margin-bottom: 20px;
+            border: 3px solid purple;
+            border-radius: 10px;
+        }
+        .product h3{
+            margin: 0;
+        }
+        .product p{
+            margin: 10px 0;
+        }
+        .product button{
+            background-color: palevioletred;
+            color: aliceblue;
+            border: 1px solid gainsboro;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        section form{
+            margin-left: 35%;
+        }
+        section form input{
+            margin-left: 50px;
+            width: 300px;
+            height: 30px;
+            margin-top: 20px;
+        }
+        #name{
+            margin-left: 53px;
+        }
+        #email{
+            margin-left: 76px;
+        }
+        #message{
+            margin-left: 57px;
+        }
+        section form button{
+            margin-top: 20px;
+            width: 50px;
+            height: 25px;
+            margin-left: 370px;
+        }
+        footer{
+            background-color: palevioletred;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and(max-width: 768px){
+            header{
+                padding: 10px;
+            }
+            nav ul{
+                flex-wrap: wrap;
+            }
+            nav li{
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            .products{
+                flex-wrap: wrap;
+            }
+            .product{
+                width: calc(100%/2 - 10px);
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div id="logomaytinh">
+        <img src="images/logomaytinh.jpg" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Giỏ hàng</a></li>
+            <li><a href="">Tư vấn khách hàng</a></li>
+            <li><a href="Dangky-Dangnhap.html">Đăng nhập/Đăng ký</a></li>
+        </ul>
+    </nav>
+    <h1>Danh mục sản phẩm</h1>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Danh mục máy tính mới</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/maytinhmoi1.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Asus Vivobook A1405VA</h3>
+                    <p>Giá sản phẩm: 20.490.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhmoi2.jpg" alt="">
+                    <h3>Tên sản phẩm: Lenovo IdeaPad Slim 5 14IRL8</h3>
+                    <p>Giá sản phẩm: 20.490.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhmoi3.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Asus TUF Gaming FX507ZC4-HN095W</h3>
+                    <p>Giá sản phẩm: 24.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhmoi4.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Asus Zenbook 14X 202</h3>
+                    <p>Giá sản phẩm: 20.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhmoi5.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Lenovo IdeaPad 1 15ALC7 R5</h3>
+                    <p>Giá sản phẩm: 12.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhmoi6.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Lenovo V15 G4 IAH i5 12500H</h3>
+                    <p>Giá sản phẩm: 13.990.000</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Danh mục máy tính bán chạy</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/banchay1.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Asus Vivobook Go 15 E1504FA R5</h3>
+                    <p>Giá sản phẩm: 14.490.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/banchay2.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop HP 15s fq5229TU i3 1215U </h3>
+                    <p>Giá sản phẩm: 13.690.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/banchay3.jpg" alt="">
+                    <h3>Tên sản phẩm: Asus TUF Dash F15 FX517ZC-HN079W </h3>
+                    <p>Giá sản phẩm: 20.690.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/banchay4.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Dell Inspiron 14 Plus 7420 T9K26</h3>
+                    <p>Giá sản phẩm: 22.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/banchay5.jpg" alt="">
+                    <h3>Tên sản phẩm: Lenovo IdeaPad 3 14IAH8 i5 12450H</h3>
+                    <p>Giá sản phẩm: 15.490.000</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/banchay6.jpg" alt="">
+                    <h3>Tên sản phẩm: Lenovo IdeaPad 3 15ITL6 i5 1155G7</h3>
+                    <p>Giá sản phẩm: 15.290.000</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+         <section class="section">
+            <h2>Danh mục sách hot</h2>
+            <div class="products">
+                <div class="product">
+                <img src="images/maytinhhot1.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Asus TUF Gaming F15 FX506HF i5</h3>
+                    <p>Giá sản phẩm: 18.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhhot2.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop Dell Inspiron 15 3520 i3</h3>
+                    <p>Giá sản phẩm: 13.790.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhhot3.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop HP Pavilion 15 eg2082TU i5</h3>
+                    <p>Giá sản phẩm: 19.790.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhhot4.jpg" alt="">
+                    <h3>Tên sản phẩm: Laptop LG Gram 17Z90Q-K.AAC7U1</h3>
+                    <p>Giá sản phẩm: 25.990.000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhhot5.jpg" alt="">
+                    <h3>Tên sản phẩm: Lenovo Ideapad Gaming 3 15ARH7 R5</h3>
+                    <p>Giá sản phẩm: 25.990.000</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/maytinhhot6.jpg" alt="">
+                    <h3>Tên sản phẩm: Asus Vivobook X415EA-EK1387W i3</h3>
+                    <p>Giá sản phẩm: 10.990.000</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Liên hệ</h2>
+            <form action="">
+                <label for="">Họ và tên</label>
+                <input type="text" id="name" name="name"> <br>
+                <label for="">Email</label>
+                <input type="text" id="email" name="email"> <br>
+                <label for="message">Nội dung</label>
+                <input type="text" id="message" name="message"> <br>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+    <footer>
+        &copy; 2024 Máy Tính Store  ~ Nguyễn Văn Khoa
+    </footer>
+</body>
+</html>
